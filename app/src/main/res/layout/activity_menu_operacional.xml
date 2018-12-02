@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuPrincipal">
+
+    <Button
+        android:id="@+id/btnIngresarV"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/texto_ingresar_vehiculo"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSalidaV"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/texto_salida_vehiculo"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnListarTodosV"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/texto_listar_vehiculos"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSoloVParqueados"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/texto_lista_parqueados"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnActualizarV"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/texto_actualizar"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnEliminarV"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/texto_eliminar"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+</LinearLayout>

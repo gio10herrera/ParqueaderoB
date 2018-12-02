@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuPrincipal">
+
+    <Button
+        android:id="@+id/btnAplicacion"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/app_name"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/btnAcercaDe"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/textoAbout"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/colorPrimary"/>
+</LinearLayout>
