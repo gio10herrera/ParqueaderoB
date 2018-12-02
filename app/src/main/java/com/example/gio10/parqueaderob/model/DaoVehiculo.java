@@ -16,6 +16,9 @@ public final class DaoVehiculo {
         public static final String COLUMN_NAME_MINSALIDA = "minsalida";
         public static final String COLUMN_NAME_TOTALPAGAR = "totalpagar";
         public static final String COLUMN_NAME_ISOUT = "isout";
+        public static final String COLUMN_NAME_CADENTRADA = "cadentrada";
+        public static final String COLUMN_NAME_CADSALIDA = "cadsalida";
+        public static final String COLUMN_NAME_AVISO = "aviso";
 
     }
 
@@ -29,6 +32,8 @@ public final class DaoVehiculo {
                     VehiculoEntry.COLUMN_NAME_MINSALIDA + " INTEGER," +
                     VehiculoEntry.COLUMN_NAME_TOTALPAGAR + " INTEGER," +
                     VehiculoEntry.COLUMN_NAME_ISOUT + " INTEGER," +
+                    VehiculoEntry.COLUMN_NAME_CADENTRADA + " TEXT," +
+                    VehiculoEntry.COLUMN_NAME_CADSALIDA + " TEXT," +
                     "CONSTRAINT name_unique UNIQUE (" + VehiculoEntry.COLUMN_NAME_PLACA + "))";
 
 
