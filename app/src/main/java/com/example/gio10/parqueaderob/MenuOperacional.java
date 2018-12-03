@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MenuOperacional extends AppCompatActivity {
-    Button ingresar, listar, salida;
+    Button ingresar, listar, salida, parqueados, borrarVehic, actualizar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +37,33 @@ public class MenuOperacional extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MenuOperacional.this,Salida.class);
+                startActivity(i);
+            }
+        });
+
+        parqueados = findViewById(R.id.btnSoloVParqueados);
+        parqueados.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MenuOperacional.this,ListarParqueados.class);
+                startActivity(i);
+            }
+        });
+
+        borrarVehic = findViewById(R.id.btnEliminarV);
+        borrarVehic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MenuOperacional.this,Borrar.class);
+                startActivity(i);
+            }
+        });
+
+        actualizar = findViewById(R.id.btnActualizarV);
+        actualizar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MenuOperacional.this,Actualizar.class);
                 startActivity(i);
             }
         });

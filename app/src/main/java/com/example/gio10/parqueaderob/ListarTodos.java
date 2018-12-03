@@ -33,7 +33,7 @@ public class ListarTodos extends AppCompatActivity {
         listado = (ListView) findViewById(R.id.listaVehiculo);
         cur = GetAllData();
         llenar(cur);
-        String from [] = new String[]{DaoVehiculo.VehiculoEntry.COLUMN_NAME_PLACA,DaoVehiculo.VehiculoEntry.COLUMN_NAME_CADENTRADA,DaoVehiculo.VehiculoEntry.COLUMN_NAME_HORASALIDA,DaoVehiculo.VehiculoEntry.COLUMN_NAME_TOTALPAGAR};
+        String from [] = new String[]{DaoVehiculo.VehiculoEntry.COLUMN_NAME_PLACA,DaoVehiculo.VehiculoEntry.COLUMN_NAME_CADENTRADA,DaoVehiculo.VehiculoEntry.COLUMN_NAME_CADSALIDA,DaoVehiculo.VehiculoEntry.COLUMN_NAME_TOTALPAGAR};
         int to [] = new int[] {R.id.txtLaPlaca,R.id.txtLaEntrada,R.id.txtLaSalida,R.id.txtElSaldo};
         try {
             adaptador = new SimpleCursorAdapter(this,R.layout.lista_detalle_vehiculo,cur,from,to,0);

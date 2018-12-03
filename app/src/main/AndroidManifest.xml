@@ -22,7 +22,9 @@
         <activity android:name=".Insertar" />
         <activity android:name=".Salida" />
         <activity android:name=".ListarTodos" />
-        <activity android:name=".ListarParqueados"></activity>
+        <activity android:name=".ListarParqueados" />
+        <activity android:name=".Borrar" />
+        <activity android:name=".Actualizar"></activity>
     </application>
 
 </manifest>

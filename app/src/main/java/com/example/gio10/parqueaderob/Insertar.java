@@ -74,7 +74,7 @@ public class Insertar extends AppCompatActivity {
             values.put(DaoVehiculo.VehiculoEntry.COLUMN_NAME_TOTALPAGAR, 0);
             values.put(DaoVehiculo.VehiculoEntry.COLUMN_NAME_ISOUT, 0);
             values.put(DaoVehiculo.VehiculoEntry.COLUMN_NAME_CADENTRADA, horas.getSelectedItem().toString() + ":" + minutos.getSelectedItem().toString() + " horas");
-
+            values.put(DaoVehiculo.VehiculoEntry.COLUMN_NAME_CADSALIDA, "PARQUEADO");
 
             long newRowId = sqldata.insert(DaoVehiculo.VehiculoEntry.TABLE_NAME, null, values);
             Toast.makeText(this,"INSERCIÔN EXITOSA", Toast.LENGTH_LONG).show();

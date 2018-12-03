@@ -140,7 +140,7 @@ public class Salida extends AppCompatActivity {
 
 
     public void calcularTotalPagar(){
-        int difHoras = v.getHoraSalida()-v.getHoraEntrada();
+        int difHoras = v.getHoraSalida()-v.getHoraEntrada()+2;
         int tMinHoras = difHoras*60;
         int difMin = v.getMinSalida()-v.getMinEntrada();
         int totalMinutos = tMinHoras+difMin;
