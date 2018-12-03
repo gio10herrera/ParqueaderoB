@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MenuOperacional extends AppCompatActivity {
-    Button ingresar, listar;
+    Button ingresar, listar, salida;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +28,15 @@ public class MenuOperacional extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MenuOperacional.this,ListarTodos.class);
+                startActivity(i);
+            }
+        });
+
+        salida = findViewById(R.id.btnSalidaV);
+        salida.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MenuOperacional.this,Salida.class);
                 startActivity(i);
             }
         });

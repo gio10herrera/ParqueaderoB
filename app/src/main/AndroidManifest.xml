@@ -21,7 +21,8 @@
         <activity android:name=".MenuOperacional" />
         <activity android:name=".Insertar" />
         <activity android:name=".Salida" />
-        <activity android:name=".ListarTodos"></activity>
+        <activity android:name=".ListarTodos" />
+        <activity android:name=".ListarParqueados"></activity>
     </application>
 
 </manifest>
